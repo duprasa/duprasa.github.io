@@ -1,1 +1,0 @@
-import{_ as s}from"./CMLbLCSi.js";import{_ as n,c as a,d as e,a as t,b as c,w as r,o as _}from"./CiTeYVRL.js";const l={};function i(d,u){const o=s;return _(),a("div",null,[e(" Posts "),t("ul",null,[t("li",null,[c(o,{to:"/posts/robots-guide-to-feelings"},{default:r(()=>[e("Robots guide to feelings")]),_:1})])])])}const p=n(l,[["render",i]]);export{p as default};
