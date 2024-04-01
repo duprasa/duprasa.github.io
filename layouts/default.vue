@@ -57,7 +57,7 @@
 }
 
 .face {
-  background-image: url("~/assets/face.jpg");
+  background-image: url("/face.jpg");
   height: 150px;
   background-size: cover;
   background-position: 0px -180px;
