@@ -7,7 +7,7 @@ const catsQuery = {
 </script>
 
 <template>
-  <div>
+  <div class="content">
     <div class="welcome">
       <h3 class="big">Hi There!</h3>
       <p>You have stumbled onto my small corner of the internet.</p>
@@ -41,7 +41,10 @@ const catsQuery = {
       font-size: 40px;
   a
     color: pink
-
+  .content
+    display: flex
+    justify-content: center
+    flex-direction: column
   .welcome
     padding-top: 100px
     max-width: 600px
