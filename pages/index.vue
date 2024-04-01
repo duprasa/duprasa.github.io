@@ -7,7 +7,7 @@ const catsQuery = {
 </script>
 
 <template>
-  <div class="content">
+  <div class="main-content">
     <div class="welcome">
       <h3 class="big">Hi There!</h3>
       <p>You have stumbled onto my small corner of the internet.</p>
@@ -16,7 +16,7 @@ const catsQuery = {
       <p>You can expect thoughts about psychology, science, sexuality, web development and some life hacks</p>
       <p>I hope you leave here with a few ideas that helps you find you.</p>
     </div>
-    <h3>Recent Posts</h3>
+    <h3>Recent Ideas</h3>
     <ContentQuery path="/posts">
       <template #default="{ data }">
         <ul>
@@ -41,7 +41,7 @@ const catsQuery = {
       font-size: 40px;
   a
     color: pink
-  .content
+  .main-content
     display: flex
     justify-content: center
     flex-direction: column

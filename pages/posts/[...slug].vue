@@ -1,12 +1,16 @@
 <template>
-  <ContentDoc v-slot="{ doc }">
-    <article>
-      <ContentRenderer :value="doc" />
-    </article>
-  </ContentDoc>
-</template>
+  <div id="article">
+
+    <ContentDoc v-slot="{ doc }">
+      <article>
+        <ContentRenderer :value="doc" />
+      </article>
+    </ContentDoc>
+  </div>
+  </template>
 
 <style lang="stylus">
+#article
   .content
     display: flex
     flex-direction: row
@@ -22,12 +26,10 @@
     h1 
       font-size: 30px
       text-align: center
-      font-weight: bold
       margin: 16px 0px
       color: white
     h2
       font-size: 20px
-      font-weight: bold
       margin-top: 64px
       margin-bottom: 32px
       a

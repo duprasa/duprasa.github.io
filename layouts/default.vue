@@ -9,7 +9,7 @@
           <li><NuxtLink to="/">Index</NuxtLink></li>
           <li><NuxtLink to="/about">About</NuxtLink></li>
         </ul> -->
-        <h2>Recent Posts</h2>
+        <h2>Recent Ideas</h2>
         <ContentQuery path="/posts">
           <template #default="{ data }">
             <ul>
@@ -39,15 +39,21 @@
   color: #cdbbbe;
   min-height: 100vh;
 }
+
+.content
+  display: flex
+  flex-direction: row
+  justify-content: center
+  flex-grow: 1
+  padding: 0px 8px 100px 8px
+
+
 .navigation {
   background: pink;
   width: 300px;
+  min-width: 300px;
   box-sizing: border-box;
   color: white
-}
-
-.content {
-  flex-grow: 1
 }
 
 .face {
@@ -86,7 +92,7 @@ h1 {
 
 @media only screen and (max-width: 600px) {
   .root {
-    flex-direction: column-reverse
+    flex-direction: column
   }
   .navigation {
     width: 100%
