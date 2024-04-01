@@ -1,12 +1,13 @@
+![alt_text](/posts/robot-feelings/image1.png "image_tooltip")
+
 # A robot’s guide to feeling
 
-![alt_text](/posts/robot-feelings/image1.png "image_tooltip")
 
 ## I feel fine.
 
 “How are you?” My friend asked me. 
 
-Without even a thought, I would give them the verbal equivalent to a handshake or a wave, the old reliable “good!” accompanied by a simple smile 🙂 and maybe, if they were lucky, a glance. Nothing out of the ordinary, a common, normal response said by many and attracts little attention. I felt okay saying “good”, because that's how I felt. I was alive, I was doing stuff, eating, working, you know the usual. I was good, I was okay, I was fine... anyways...
+Without even a thought, I would give them the verbal equivalent to a handshake or a wave, the old reliable “good!” accompanied by a simple smile and maybe, if they were lucky, a glance. Nothing out of the ordinary, a common, normal response said by many and attracts little attention. I felt okay saying “good”, because that's how I felt. I was alive, I was doing stuff, eating, working, you know the usual. I was good, I was okay, I was fine... anyways...
 
 Occasionally I would go see a movie with my dad and on the way there, he would always ask me “How are you?”. He always got the old reliable. “Good!” Smile and all. Occasionally he would question me: “You always just say good!” I would look at him confused and ask him “What do you want me to say?” This would start a back and forth, eventually leading him to talking about what he’s been up to. I was fine listening to him talk. What did he want from me? I did what I was supposed to! After years of this he started to imitate our exchange at family gatherings. He would ask, “How are you doing?” and immediately follow up with a “gooooooood!” Imitating me in a whiny unflattering tone. 
 

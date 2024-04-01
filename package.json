@@ -17,6 +17,9 @@
     "vue-router": "^4.3.0"
   },
   "devDependencies": {
-    "gh-pages": "^6.1.1"
+    "@nuxtjs/google-fonts": "^3.2.0",
+    "gh-pages": "^6.1.1",
+    "stylus": "^0.63.0",
+    "stylus-loader": "^8.1.0"
   }
 }

@@ -4,9 +4,16 @@ const path = require('path');
 export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: [
-    '@nuxt/content'
+    '@nuxt/content',
+    '@nuxtjs/google-fonts'
   ],
   css: [
     'assets/normalize.css'
-  ]
+  ],
+  googleFonts: {
+    families: {
+      Workbench: true,
+      "Rosarivo": true,
+    }
+  }
 })
