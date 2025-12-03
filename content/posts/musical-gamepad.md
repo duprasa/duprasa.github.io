@@ -1,4 +1,4 @@
 # Musical Gamepad
 
-More info coming soon.
+<a href="/xbox-instrument">Try it out</a>
 

@@ -14,11 +14,9 @@ const catsQuery = {
   <div class="main-content">
     <div class="welcome">
       <h3 class="big">Hi There!</h3>
-      <p>You have stumbled onto my small corner of the internet.</p>
-      <p>For me this is a sacred place where I catalog my most prized ideas</p>
-      <p>My goal here is not to create content or get views, but to share unobvious ideas that I hope can bring value to your life as much as it has in me writing them for you.</p>
-      <p>You can expect thoughts about psychology, science, sexuality, web development and some life hacks</p>
-      <p>I hope you leave here with a few ideas that helps you find you.</p>
+      <p>You have stumbled onto my small corner of the internet. For <NuxtLink to="/about">me</NuxtLink>, this is a sacred place where I catalog my most prized ideas.</p>
+      <p>Here I share unobvious ideas that I hope can prove useful to you.</p>
+      <p>You can expect thoughts about emotions, music, science, web development, and maybe a worthwhile life hack.</p>
     </div>
     <h3>Recent Ideas</h3>
     <ContentQuery path="/posts">

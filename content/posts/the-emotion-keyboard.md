@@ -1,4 +1,4 @@
 # The Emotion Keyboard
 
-More info coming soon.
+<a href="/emotion-piano">Try it out</a>
 
