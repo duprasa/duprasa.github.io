@@ -1,4 +1,5 @@
 <script setup>
+const { hasThumbnail, getThumbnail } = usePostThumbnail();
 const catsQuery = {
   where: [
 { _path: /^\/posts/ },
@@ -19,9 +20,20 @@ const catsQuery = {
     <h3>Recent Ideas</h3>
     <ContentQuery path="/posts">
       <template #default="{ data }">
-        <ul>
-          <li v-for="post of data" :key="post.title">
-            <NuxtLink :to="post._path">{{ post.title }}</NuxtLink>
+        <ul class="post-list">
+          <li v-for="post of data" :key="post.title" class="post-item">
+            <NuxtLink :to="post._path" class="post-link">
+              <div class="thumbnail-container">
+                <img 
+                  v-if="hasThumbnail(post)"
+                  :src="getThumbnail(post)" 
+                  alt="Thumbnail" 
+                  class="thumbnail"
+                />
+                <div v-else class="thumbnail-placeholder"></div>
+              </div>
+              <span class="post-title">{{ post.title }}</span>
+            </NuxtLink>
           </li>
         </ul>
       </template>
@@ -41,6 +53,58 @@ const catsQuery = {
       font-size: 40px;
   a
     color: pink
+    text-decoration: none
+  
+  .post-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .post-item {
+    margin-bottom: 24px;
+  }
+
+  .post-link {
+    display: flex;
+    align-items: center;
+    color: pink;
+    font-size: 1.2rem;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .thumbnail-container {
+    width: 240px;
+    height: 160px;
+    margin-right: 24px;
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .thumbnail {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .thumbnail-placeholder {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255,255,255,0.05);
+  }
+
+  .post-title {
+    font-family: "Rosarivo";
+    font-weight: bold;
+  }
+
   .main-content
     display: flex
     justify-content: center
