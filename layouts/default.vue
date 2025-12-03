@@ -2,11 +2,11 @@
   <div class="root">
     <WaveBackground />
     <div class="navigation">
-      <NuxtLink class="face" to="/">
-        <h1><em>Sam Dupras</em><br/>Golden Nuggets</h1>
-      </NuxtLink>
       <div class="nav-content">
-        <h2>Recent Ideas</h2>
+        <div class="about-link">
+          <h2><NuxtLink to="/about">Who am I?</NuxtLink></h2>
+        </div>
+        <h2><NuxtLink to="/">Recent Ideas</NuxtLink></h2>
         <ContentQuery path="/posts">
           <template #default="{ data }">
             <ul class="post-list">
@@ -91,6 +91,19 @@ h2 {
   font-family: "Workbench";
   padding-bottom: 8px;
   color: black;
+  a {
+    color: black;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.about-link {
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
 }
 
 .post-list {
@@ -198,20 +211,28 @@ h1 {
   .nav-content {
     display: flex;
     flex-direction: row;
-    overflow-x: auto;
     align-items: center;
     padding: 8px;
+    flex-grow: 1; /* Fill remaining space */
+    justify-content: center; /* Center the links */
+    gap: 24px; /* Space between links */
   }
   
   .post-list {
-    display: flex;
-    flex-direction: row;
+    display: none; /* Hide post list on mobile */
+  }
+
+  .about-link {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+    margin-right: 16px;
   }
   
-  .post-item {
-    margin-bottom: 0;
-    margin-right: 16px;
-    min-width: 150px;
+  h2 {
+    font-size: 1.2rem; /* Smaller font for mobile */
+    padding-bottom: 0; /* Remove padding for vertical centering */
+    margin: 0;
   }
 }
 
