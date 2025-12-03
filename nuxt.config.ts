@@ -15,5 +15,10 @@ export default defineNuxtConfig({
       Workbench: true,
       "Rosarivo": true,
     }
+  },
+  nitro: {
+    prerender: {
+      ignore: ['/emotion-piano', '/xbox-instrument']
+    }
   }
 })
