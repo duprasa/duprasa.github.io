@@ -1,6 +1,13 @@
-![alt_text](/posts/robot-feelings/image1.png "image_tooltip")
+---
+title: "A robot's guide to feeling"
+date: 2024-04-01
+thumbnail: "/posts/robot-feelings/image1.png"
+description: "How I learned to identify and process my emotions using logic and systematic approaches."
+---
 
 # A robot’s guide to feeling
+
+![alt_text](/posts/robot-feelings/image1.png "image_tooltip")
 
 
 ## I feel fine.
@@ -61,11 +68,15 @@ What I would see frequently is that if a muscle isn’t stretched it retracts an
 
 ![alt_text](/posts/robot-feelings/image4.png "image_tooltip")
 
+
+
 ###### [Dany winks flexibility](https://www.daniwinksflexibility.com/) a great resource and active member of the r/flexibility subreddit
 
 What if the mind behaves in a similar way? I wondered. I could see parallels between this and the mind. I would think back to [this video by Nicky Case](https://ncase.me/neurons/) that taught me how neural pathways would change based on what we expose ourselves to, a lot like how a muscle loses flexibility or weakens if unused. What if my emotion pathways just shriveled away since they were unused and untrained. I had to stretch and train these feeling neurons to get them back into shape... but how could I do that?
 
 ![alt_text](/posts/robot-feelings/image5.png "image_tooltip")
+
+
 
 ###### Nicky Case’s Neurons
 

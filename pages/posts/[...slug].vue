@@ -18,6 +18,7 @@
     padding: 0px 8px
     padding-bottom: 100px
   article
+    margin-top: 64px;
     max-width: 800px
     h1, h2
       font-family: "Workbench"
@@ -49,4 +50,5 @@
     img
       margin-top: 32px
       width: 100%
+      display: block
 </style>

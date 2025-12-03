@@ -1,6 +1,8 @@
 export const usePostThumbnail = () => {
   const hasThumbnail = (post: any): boolean => {
     if (!post) return false;
+    // Explicit metadata thumbnail takes precedence
+    if (post.thumbnail) return true;
     if (post.image || post.cover) return true;
     if (post.body && post.body.children) {
       if (post.body.children.some((c: any) => c.tag === 'img')) return true;
@@ -11,6 +13,8 @@ export const usePostThumbnail = () => {
 
   const getThumbnail = (post: any): string => {
     if (!post) return '/face.jpg';
+    // Explicit metadata thumbnail takes precedence
+    if (post.thumbnail) return post.thumbnail;
     if (post.image) return post.image;
     if (post.cover) return post.cover;
     
@@ -38,4 +42,3 @@ export const usePostThumbnail = () => {
     getThumbnail
   }
 }
-

@@ -8,6 +8,12 @@ const catsQuery = {
 { _path: /^\/posts/ },
   ],
 }
+
+const formatDate = (dateString) => {
+  if (!dateString) return '';
+  const date = new Date(dateString);
+  return date.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+}
 </script>
 
 <template>
@@ -33,7 +39,11 @@ const catsQuery = {
                 />
                 <div v-else class="thumbnail-placeholder"></div>
               </div>
-              <span class="post-title">{{ post.title }}</span>
+              <div class="post-info">
+                <span class="post-title">{{ post.title }}</span>
+                <span v-if="post.date" class="post-date">{{ formatDate(post.date) }}</span>
+                <p v-if="post.description" class="post-description">{{ post.description }}</p>
+              </div>
             </NuxtLink>
           </li>
         </ul>
@@ -54,7 +64,10 @@ const catsQuery = {
       font-size: 40px;
   a
     color: pink
-    text-decoration: none
+    text-decoration: underline
+    text-underline-offset: 4px
+    &.post-link
+      text-decoration: none
   
   .post-list {
     list-style: none;
@@ -63,16 +76,17 @@ const catsQuery = {
   }
 
   .post-item {
-    margin-bottom: 24px;
+    margin-bottom: 32px; /* Increased spacing for new content */
   }
 
   .post-link {
     display: flex;
-    align-items: center;
+    align-items: flex-start; /* Align to top */
     color: pink;
-    font-size: 1.2rem;
+    text-decoration: none;
+    transition: opacity 0.2s;
     &:hover {
-      text-decoration: underline;
+      opacity: 0.8;
     }
   }
 
@@ -101,9 +115,35 @@ const catsQuery = {
     background-color: rgba(255,255,255,0.05);
   }
 
+  .post-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 8px; /* Slight offset to align with image top */
+  }
+
   .post-title {
     font-family: "Rosarivo";
     font-weight: bold;
+    font-size: 1.4rem;
+    margin-bottom: 8px;
+    color: #cdbbbe; /* Match site text color */
+  }
+
+  .post-date {
+    font-size: 0.9rem;
+    color: rgba(205, 187, 190, 0.6);
+    margin-bottom: 12px;
+    font-family: "Rosarivo";
+  }
+
+  .post-description {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #cdbbbe;
+    font-family: "Rosarivo";
+    margin: 0;
+    max-width: 600px;
   }
 
   .main-content
