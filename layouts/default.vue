@@ -2,7 +2,7 @@
   <div class="root">
     <div class="navigation">
       <NuxtLink class="face" to="/">
-        <h1><em>Sam Dupras</em><br/>golden nuggets</h1>
+        <h1><em>Sam Dupras</em><br/>Golden Nuggets</h1>
       </NuxtLink>
       <div class="nav-content">
         <!-- <ul>

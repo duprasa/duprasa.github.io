@@ -10,7 +10,7 @@ const catsQuery = {
   <div class="main-content">
     <div class="welcome">
       <h3 class="big">Hi There!</h3>
-      <p>You have stumbled onto my small corner of the internet.</p>
+      <p>You have stumbled onto my small corner of the internet. TEST</p>
       <p>For me this is a sacred place where I catalog my most prized ideas</p>
       <p>My goal here is not to create content or get views, but to share unobvious ideas that I hope can bring value to your life as much as it has in me writing them for you.</p>
       <p>You can expect thoughts about psychology, science, sexuality, web development and some life hacks</p>

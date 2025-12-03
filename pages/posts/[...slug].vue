@@ -24,12 +24,12 @@
     h6, p
       font-family: "Rosarivo"
     h1 
-      font-size: 30px
+      font-size: 34px
       text-align: center
       margin: 16px 0px
       color: white
     h2
-      font-size: 20px
+      font-size: 24px
       margin-top: 64px
       margin-bottom: 32px
       a
@@ -41,8 +41,8 @@
       font-size: 12px
     p
       margin-top: 16px
-      line-height: 1.5em
-      font-size: 16px
+      line-height: 1.6em
+      font-size: 18px
     a
       color: pink
       text-decoration: underline
