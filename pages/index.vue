@@ -63,7 +63,7 @@ const formatDate = (dateString) => {
     &.big
       font-size: 40px;
   a
-    color: pink
+    color: #c1a1a6
     text-decoration: underline
     text-underline-offset: 4px
     &.post-link

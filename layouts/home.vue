@@ -11,7 +11,7 @@
 .root {
   display: flex;
   flex-direction: row;
-  color: #ffc0cb;
+  color: #c1a1a6;
   min-height: 100vh;
 }
 
