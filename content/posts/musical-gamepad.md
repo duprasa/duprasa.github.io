@@ -1,7 +1,7 @@
 ---
 title: "Musical Gamepad"
 date: 2025-12-02
-thumbnail: ""
+thumbnail: "/posts/gamepad-instrument/thumbnail.png"
 description: "Turning a game controller into a musical instrument."
 ---
 

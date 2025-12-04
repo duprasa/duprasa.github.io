@@ -103,6 +103,7 @@ const { hasThumbnail, getThumbnail } = usePostThumbnail();
   height: auto;
   display: block;
   transition: filter 0.2s;
+  padding-bottom: 16px;
 }
 
 // .home-icon:hover {
@@ -253,7 +254,8 @@ h1 {
   }
   
   .home-icon {
-    width: 60px;
+    width: 80px;
+    padding-bottom: 0;
   }
 
   .nav-content {

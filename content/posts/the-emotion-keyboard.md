@@ -1,7 +1,7 @@
 ---
 title: "The Emotion Keyboard"
 date: 2025-12-02
-thumbnail: ""
+thumbnail: "/posts/emotion-piano/thumbnail.png"
 description: "An interactive tool to explore the spectrum of human emotions."
 ---
 
