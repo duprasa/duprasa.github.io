@@ -88,6 +88,10 @@ const formatDate = (dateString) => {
     &:hover {
       opacity: 0.8;
     }
+    
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
   }
 
   .thumbnail-container {
@@ -101,6 +105,13 @@ const formatDate = (dateString) => {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @media (max-width: 768px) {
+      width: 100%;
+      height: 200px;
+      margin-right: 0;
+      margin-bottom: 16px;
+    }
   }
 
   .thumbnail {
