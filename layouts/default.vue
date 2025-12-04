@@ -40,14 +40,10 @@
               <img src="/home.svg" alt="Home" class="home-icon" />
             </NuxtLink>
           </div>
-          <NuxtLink to="/about" class="mobile-face-link">
-            <div class="face mobile-face"></div>
-          </NuxtLink>
         </div>
         <div class="about-link">
           <NuxtLink to="/about">
             <h2>Who am I?</h2>
-            <div class="face desktop-face"></div>
           </NuxtLink>
         </div>
       </div>
@@ -113,21 +109,10 @@ const { hasThumbnail, getThumbnail } = usePostThumbnail();
 //  filter: brightness(0) saturate(100%) invert(26%) sepia(93%) saturate(2292%) hue-rotate(325deg) brightness(87%) contrast(89%); 
 //}
 
-.mobile-face-link, .mobile-home, .mobile-center-group {
+.mobile-home, .mobile-center-group {
   display: none;
 }
 
-.face {
-  background-image: url("/face.jpg");
-  height: 300px;
-  background-position: 0px -100px;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-}
 
 .nav-content {
   padding: 16px;
@@ -267,17 +252,6 @@ h1 {
     gap: 16px;
   }
   
-  .desktop-face {
-    display: none;
-  }
-  
-  .face {
-    height: 80px;
-    background-position: center -20px;
-    width: 60px;
-    flex-shrink: 0;
-  }
-
   .home-icon {
     width: 60px;
   }
